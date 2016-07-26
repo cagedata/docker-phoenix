@@ -11,5 +11,7 @@ RUN yes | mix local.hex
 
 RUN yes | mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new-$PHOENIX_VERSION.ez
 
+EXPOSE 4000
+
 WORKDIR /app
 VOLUME /app
